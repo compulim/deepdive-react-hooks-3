@@ -5,7 +5,6 @@ const NewItem = ({ onAdd }) => {
   const [value, setValue] = useState('');
 
   const handleChange = useCallback(({ target: { value } }) => setValue(value), [setValue]);
-
   const handleSubmit = useCallback(
     event => {
       event.preventDefault();
