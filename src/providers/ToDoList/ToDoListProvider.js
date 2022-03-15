@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useReducer, useState } from 'react';
+import { useCallback, useMemo, useState } from 'react';
 import ToDoListContext from './private/ToDoListContext';
 
 function uniqueId() {
@@ -34,7 +34,7 @@ const ToDoListProvider = ({ children }) => {
       itemsState,
       toggleItem
     }),
-    [addItem, deleteItem, items, toggleItem]
+    [addItem, deleteItem, itemsState, toggleItem]
   );
 
   return <ToDoListContext.Provider value={context}>{children}</ToDoListContext.Provider>;
