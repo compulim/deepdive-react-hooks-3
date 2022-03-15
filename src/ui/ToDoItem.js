@@ -14,11 +14,8 @@ const ToDoItem = ({ id }) => {
   const checked = !!item?.checked;
   const text = item?.text;
 
-  const handleCheck = useCallback(
-    ({ target: { checked } }) => (checked ? toggleItem({ checked: true, id }) : toggleItem({ checked: false, id })),
-    [id, toggleItem]
-  );
-  const handleDelete = useCallback(() => deleteItem({ id }), [id, deleteItem]);
+  const handleCheck = useCallback(({ target: { checked } }) => toggleItem({ checked, id }), [id, toggleItem]);
+  const handleDelete = useCallback(() => deleteItem({ id }), [deleteItem, id]);
 
   return (
     <li className="to-do-item">

@@ -1,6 +1,6 @@
 import './App.css';
-import ToDoListProvider from './providers/ToDoList/ToDoListProvider';
 import ToDoList from './ui/ToDoList';
+import ToDoListProvider from './providers/ToDoList/ToDoListProvider';
 
 function App() {
   return (
