@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/deepdive-react-hooks-3/static/css/main.f9860356.css",
+    "main.js": "/deepdive-react-hooks-3/static/js/main.5e6f68df.js",
+    "static/js/787.88e7a148.chunk.js": "/deepdive-react-hooks-3/static/js/787.88e7a148.chunk.js",
+    "index.html": "/deepdive-react-hooks-3/index.html",
+    "main.f9860356.css.map": "/deepdive-react-hooks-3/static/css/main.f9860356.css.map",
+    "main.5e6f68df.js.map": "/deepdive-react-hooks-3/static/js/main.5e6f68df.js.map",
+    "787.88e7a148.chunk.js.map": "/deepdive-react-hooks-3/static/js/787.88e7a148.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f9860356.css",
+    "static/js/main.5e6f68df.js"
+  ]
+}
