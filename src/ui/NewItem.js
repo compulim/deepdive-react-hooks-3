@@ -1,18 +1,20 @@
 import './NewItem.css';
 import { useCallback, useState } from 'react';
+import useAddItem from '../providers/ToDoList/useAddItem';
 
-const NewItem = ({ onAdd }) => {
+const NewItem = () => {
   const [value, setValue] = useState('');
+  const addItem = useAddItem();
 
   const handleChange = useCallback(({ target: { value } }) => setValue(value), [setValue]);
   const handleSubmit = useCallback(
     event => {
       event.preventDefault();
 
-      onAdd(value);
+      addItem(value);
       setValue('');
     },
-    [onAdd, setValue, value]
+    [addItem, setValue, value]
   );
 
   return (
